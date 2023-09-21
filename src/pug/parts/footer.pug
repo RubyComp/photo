@@ -1,3 +1,18 @@
-footer#footer
-	span © Все права защищены
-	a(href="/legal.html") Политика конфиденциальности
+footer.footer
+
+	.container.footer__nav
+		include ../modules/nav
+
+	.container.footer__social
+		include ../modules/social
+
+	.container.footer__brand
+		a(href="https://rusit-po.ru").created
+			img.created__img(src=imgPath + "rusit.svg", alt="")
+			.created__link Сайт разработан компанией Rusit
+		div.focused-logo
+			img.site-logo(src=imgPath + "logo.svg")
+			div.focused-logo__sign
+				div Майя Барковская
+				div
+					small Фотограф

@@ -1,8 +1,8 @@
 $fix: 40px;
 
-$lg-grid: 1360px;
+$lg-grid: 1400px;
 $md-grid: 960px;
-$sm-grid: 600px;
+$sm-grid: 640px;
 $xs-grid: 440px;
 $xxs-grid: 320px;
 
@@ -71,27 +71,23 @@ $xxs: $xxs-grid + $fix;
 	margin: 0 auto;
 
 	@include lg {
-		// background-color: grey;
+		// background-color: rgba(128, 128, 128, 0.644);
 		width: $lg-grid;
 	}
-
 	@include md {
-		// background-color: coral;
+		// background-color: rgba(255, 127, 80, 0.658);
 		width: $md-grid;
 	}
-
 	@include sm {
-		// background-color: steelblue;
+		// background-color: rgba(70, 131, 180, 0.678);
 		width: $sm-grid;
 	}
-
 	@include xs {
-		// background-color: forestgreen;
+		// background-color: rgba(34, 139, 34, 0.712);
 		width: $xs-grid;
 	}
-
 	@include xxs {
-		// background-color: hotpink;
+		// background-color: rgba(255, 105, 180, 0.699);
 		width: $xxs-grid;
 	}
 }

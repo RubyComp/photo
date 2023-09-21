@@ -1,0 +1,171 @@
+
+.nav-list {
+	--gap: 1.2rem;
+	display: flex;
+	font-size: 14px;
+	gap: var(--gap);
+	text-transform: uppercase;
+
+	transition: opacity .3s;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@include md {
+		font-size: 12px;
+	}
+	@include xs {
+		font-size: 12px;
+	}
+	@include xxs {
+		font-size: 10px;
+		gap: .2rem;
+	}
+
+	li {
+		align-items: center;
+		display: flex;
+		gap: var(--gap);
+
+		&:not(:first-child)::before {
+			background-color: var(--text-color);
+			border-radius: 50%;
+			content: '';
+			display: block;
+			height: 5px;
+			width: 5px;
+			@include xs {
+				display: none;
+			}
+		}
+	}
+
+	a {
+		display: block;
+		padding: .4em .6em;
+
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+	
+}
+
+.social-list {
+	display: flex;
+	gap: 1.25rem;
+
+	gap: 2.5rem;
+	@include md {
+		gap: 2rem;
+	}
+	@include sm {
+		gap: 1.5rem;
+	}
+	@include xs {
+		gap: 1.2rem;
+	}
+	@include xxs {
+		gap: 1.2rem;
+	}
+	img {
+		transition: transform .55s;
+		width: 50px;
+		@include md {
+			width: 36px;
+		}
+		@include sm {
+			width: 32px;
+		}
+		@include xs {
+			width: 24px;
+		}
+		@include xxs {
+			width: 20px;
+		}
+	}
+	a:hover {
+		img {
+			transform: translateY(-5px);
+		}
+	}
+}
+
+.gallery {
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 1rem;
+		width: 100%;
+
+		@include sm-and-less {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include xs {
+			grid-gap: .5rem;
+		}
+		@include xxs {
+			grid-gap: .5rem;
+		}
+
+		.double {
+			grid-column: span 2;
+		}
+		picture {
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&:hover {
+				img {
+					transform: scale(1.08);
+					// transform: scale(.9);
+				}
+				// outline: 1px solid red;
+			}
+		}
+		img {
+			transition: transform .9s;
+			height: auto;
+			width: 100%;
+		}
+		
+	}
+}
+.more-items {
+	display: block;
+	font-size: 14px;
+	padding: .4em .8em;
+	cursor: pointer;
+	margin: 3rem auto;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+.tel:hover {
+	text-decoration: underline;
+}
+
+#to-top-btn {
+	background-image: url($imgPath + 'icons/up.svg');
+	background-position: center 16px;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	bottom: 8vh;
+	height: 48px;
+	position: fixed;
+	right: 5vw;
+	width: 48px;
+	transition: outline .3s;
+	outline: 1px solid transparent;
+	cursor: pointer;
+	opacity: .8;
+
+	&:hover {
+		outline: 1px solid rgb(44, 44, 44);
+	}
+}

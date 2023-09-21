@@ -377,3 +377,11 @@ img {
 		}
 	}
 }
+.not-found {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+}

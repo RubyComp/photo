@@ -114,6 +114,9 @@
 		}
 		.quadruple {
 			grid-column: span 4;
+			@include sm-and-less {
+				grid-column: span 2;
+			}
 		}
 		picture {
 			overflow: hidden;

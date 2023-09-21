@@ -52,9 +52,6 @@ img {
 .line {
 	margin: 3.1rem 0;
 	border-top: 1px solid var(--text-color);
-	&-spaced {
-		margin: 5rem 0;
-	}
 	@include md {
 		margin: 2.8rem 0;
 	}
@@ -63,6 +60,18 @@ img {
 	}
 	@include xs {
 		margin: 1.8rem 0;
+	}
+	&-spaced {
+		margin: 4rem 0;
+		@include sm {
+			margin: 3rem 0;
+		}
+		@include xs {
+			margin: 2.75rem 0;
+		}
+		@include xxs {
+			margin: 2.5rem 0;
+		}
 	}
 }
 
@@ -152,6 +161,34 @@ img {
 	}
 	.social-list {
 		margin-top: 6px;
+
+		@include md {
+			gap: 1.5rem;
+		}
+		@include sm {
+			gap: 1.25rem;
+		}
+		@include xs {
+			gap: 1.2rem;
+		}
+		@include xxs {
+			gap: 1.2rem;
+		}
+		img {
+			width: 30px;
+			@include md {
+				width: 26px;
+			}
+			@include sm {
+				width: 22px;
+			}
+			@include xs {
+				width: 20px;
+			}
+			@include xxs {
+				width: 20px;
+			}
+		}
 	}
 	@include more-than-sm {
 		&__burger {
@@ -227,7 +264,7 @@ img {
 		gap: 1rem;
 	}
 	@include xxs {
-		gap: .5rem;
+		gap: 1rem;
 	}
 
 	.social-list {
@@ -274,7 +311,7 @@ img {
 			width: 60px;
 		}
 		@include xxs {
-			width: 40px;
+			width: 50px;
 		}
 	}
 

@@ -109,15 +109,6 @@
 			grid-gap: .5rem;
 		}
 
-		.double {
-			grid-column: span 2;
-		}
-		.quadruple {
-			grid-column: span 4;
-			@include sm-and-less {
-				grid-column: span 2;
-			}
-		}
 		picture {
 			overflow: hidden;
 			display: flex;
@@ -135,6 +126,27 @@
 			transition: transform .9s;
 			height: auto;
 			width: 100%;
+		}
+		.double {
+			grid-column: span 2;
+			&:hover img {
+				transform: scale(1.15);
+			}
+			img {
+				transition: transform 1.5s;
+			}
+		}
+		.quadruple {
+			grid-column: span 4;
+			&:hover img {
+				transform: scale(1.15);
+			}
+			img {
+				transition: transform 1.5s;
+			}
+			@include sm-and-less {
+				grid-column: span 2;
+			}
 		}
 		
 	}

@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '28-min.jpg'
 			},
-		],
+		// ],
 
-		[
+		// [
 			{
 				name: '29-min.jpg',
 				double: true
@@ -81,9 +81,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '34-min.jpg'
 			},
-		],
+		// ],
 
-		[
+		// [
 			{
 				name: '35-min.jpg',
 				double: true
@@ -104,9 +104,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '40-min.jpg'
 			},
-		],
+		// ],
 
-		[
+		// [
 			{
 				name: '41-min.jpg',
 				double: true
@@ -127,9 +127,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '46-min.jpg'
 			},
-		],
+		// ],
 
-		[
+		// [
 			{
 				name: '47-min.jpg',
 				double: true
@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '52-min.jpg'
 			},
-		],
+		// ],
 
-		[
+		// [
 			{
 				name: '53-min.jpg',
 				double: true
@@ -173,10 +173,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '58-min.jpg'
 			},
-		],
+		// ],
 
-		[
-
+		// [
 			{
 				name: '59-min.jpg'
 			},
@@ -201,9 +200,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				name: '66-min.jpg'
 			},
-		],
+		// ],
 
-		[
+		// [
 			{
 				name: '67-min.jpg',
 				double: true
